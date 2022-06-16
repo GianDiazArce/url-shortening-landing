@@ -1,0 +1,152 @@
+.cardDark {
+    position: relative;
+    background: url('./images/bg-shorten-mobile.svg'), var(--dark-violet);
+    background-position: top right;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    border-radius: 12px;
+    min-height: 130px;
+    top: -65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    /* min-width: 330px; */
+    width: 88%;
+
+    max-width: 1100px;
+    padding: 1.8rem 2rem;
+}
+
+
+
+.card__divider {
+    height: 2px;
+    width: 100%;
+    background-color: var(--bg-gray);
+    margin: 1em 0;
+}
+
+
+.card__actions {
+    display: flex;
+    gap: .5rem;
+    flex-direction: column;
+}
+
+.card__form {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.card__input {
+    outline: none;
+    padding: .7rem .6rem;
+    border: 2px solid tranparent;
+    width: 100%;
+    border-radius: 6px;
+    color: var(--grayish-violet);
+    font-family: 'Poppins', sans-serif;
+}
+
+.card__input--error {
+    border: 2px solid var(--red);
+}
+
+.card__input--error::placeholder {
+    color: var(--red);
+    opacity: .6;
+    letter-spacing: .5px;
+}
+
+.card__message {
+    display: block;
+    color: var(--red);
+    font-size: .7rem;
+    opacity: .8;
+    /* text italic  */
+    font-style: italic;
+    margin-top: 5px;
+}
+
+.card__link {
+    text-decoration: none;
+    word-wrap: break-word;
+    color: inherit;
+    cursor: pointer;
+    transition: opacity .2s ease-in-out;
+}
+
+.card__link:hover {
+    opacity: .5;
+}
+
+.card__link--short {
+    color: var(--cyan);
+}
+
+
+.card__btn {
+    background-color: var(--cyan);
+    border: none;
+    border-radius: 4px;
+    padding: .7rem 1.5rem;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: .8px;
+    cursor: pointer;
+}
+
+
+
+
+@media screen and (min-width: 900px) {
+    .cardDark {
+        top: -65px;
+        min-height: 130px;
+        padding: .5rem 4rem;
+        background: url('./images/bg-shorten-desktop.svg'), var(--dark-violet);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .card.card-shortedlink {
+        min-height: 70px;
+    }
+
+    .card__form {
+        flex-direction: row;
+        height: 100%;
+        align-items: center;
+    }
+
+    .card__form-inputs {
+        flex: 1;
+    }
+
+    .card__message {
+        position: absolute;
+    }
+
+    .card__divider {
+        display: none;
+    }
+
+    .card__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .card__actions {
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+
+
+}

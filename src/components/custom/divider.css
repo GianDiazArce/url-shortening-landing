@@ -1,0 +1,15 @@
+.divider {
+    height: 90px;
+    width: 9px;
+    background-color: var(--cyan);
+    margin: 0 auto;
+    z-index: 0;
+}
+
+@media screen and (min-width: 1200px) {
+    .divider {
+        flex: 1;
+        height: 7px;
+        width: auto;
+    }
+}
