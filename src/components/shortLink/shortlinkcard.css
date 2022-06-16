@@ -1,6 +1,6 @@
 .cardDark {
     position: relative;
-    background: url('./images/bg-shorten-mobile.svg'), var(--dark-violet);
+    background: url('/images/bg-shorten-mobile.svg'), var(--dark-violet);
     background-position: top right;
     background-repeat: no-repeat;
     border-radius: 12px;
@@ -109,7 +109,7 @@
         top: -65px;
         min-height: 130px;
         padding: .5rem 4rem;
-        background: url('./images/bg-shorten-desktop.svg'), var(--dark-violet);
+        background: url('/images/bg-shorten-desktop.svg'), var(--dark-violet);
         background-size: cover;
         background-repeat: no-repeat;
     }
